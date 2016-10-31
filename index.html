@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="stock">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://use.fontawesome.com/5918b9f339.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+<header>
+	<h1>Shopular</h1>
+</header>
+
+<table ng-controller="inventoryController as controller">
+	<tr>
+		<th>Name</th>
+		<th>Price</th>
+		<th>Quantity</th>
+		<th>Color</th>
+	</tr>
+	<tr ng-repeat='item in controller.item'>
+		<td>{{item.name}}</td>
+		<td>{{(item.price - item.discount) * controller.tax | currency}} <img ng-show="item.discount" src="https://tiy-learn-content.s3.amazonaws.com/98350f05-sale_2.png"></td>
+		<td>{{item.quantity}}</td>
+		<td>{{item.color}}</td>
+	</tr>
+</table>
+
+
+<!-- Angular Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Main JS -->
+<script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>
