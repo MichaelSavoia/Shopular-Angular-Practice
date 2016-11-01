@@ -19,10 +19,11 @@ header h2 {
   text-align: center;
   text-transform: uppercase;
   margin: 60px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  color: #f4f4f4; }
 
 table {
-  width: 60%;
+  width: 80%;
   margin: 30px auto; }
   table tr th {
     color: white;
@@ -37,6 +38,41 @@ table {
     border-bottom: 1px solid grey; }
     table tr td img {
       height: 73%; }
+
+form {
+  width: 80%;
+  margin: 30px auto;
+  margin-top: 100px; }
+  form h2 {
+    text-align: left;
+    color: #ac2330;
+    font-family: 'Gloria Hallelujah', cursive; }
+  form p {
+    color: grey;
+    margin-top: 30px;
+    margin-left: 5%; }
+  form input {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: #f4f4f4;
+    padding: 2px;
+    display: block;
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+    border-bottom: 1px solid grey; }
+  form input.ng-pristine {
+    color: lightgrey; }
+  form input.ng-invalid {
+    color: #dd636e; }
+  form #submit {
+    margin-right: 2%;
+    font-size: 2rem;
+    color: #f4f4f4;
+    background-color: grey;
+    padding: 8px;
+    width: auto; }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important; }

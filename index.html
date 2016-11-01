@@ -34,13 +34,14 @@
 </table>
 
 <form name="newProduct" ng-submit="controller.update(controller.form)">
-	<input type="text" ng-model='controller.form.name' placeholder="Item Name">
-	<input type="number" ng-model='controller.form.id' placeholder="Item ID">
-	<input type="number" ng-model='controller.form.price' placeholder="Price">
-	<input type="number" ng-model='controller.form.discount' placeholder="Discount">
-	<input type="number" ng-model='controller.form.quantity' placeholder="Quantity">
-	<input type="text" ng-model='controller.form.color' placeholder="Color">
-	<input type="submit" value="Submit">
+	<h2>Make a New Item</h2>
+	<p>Item Name: </p><input type="text" ng-model='controller.form.name' required placeholder="Item Name">
+	<p>Item Id: </p><input type="number" ng-model='controller.form.id' required required min='0' placeholder="Item ID">
+	<p>Item Original Price: </p><input type="number" ng-model='controller.form.price' required required min='0' placeholder="Price">
+	<p>Item Discount: </p><input type="number" ng-model='controller.form.discount' required min='0' placeholder="Discount">
+	<p>Item Quantity: </p><input type="number" ng-model='controller.form.quantity' required required min='0' placeholder="Quantity">
+	<p>Item Color: </p><input type="text" ng-model='controller.form.color' required placeholder="Color">
+	<input type="submit" value="Submit" id="submit">
 </form>
 
 
