@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box; }
 
+body {
+  background-color: #f4f4f4; }
+
 header h1 {
-  font-family: 'Shrikhand', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
   text-align: center;
-  font-weight: 200;
-  font-size: 6rem;
+  font-size: 8rem;
   text-transform: uppercase;
   letter-spacing: 0.8rem;
   padding: 20px;
@@ -20,19 +22,21 @@ header h2 {
   margin-bottom: 0; }
 
 table {
-  width: 70%;
-  margin: 30px auto;
-  margin-top: 0; }
+  width: 60%;
+  margin: 30px auto; }
   table tr th {
-    color: lightgrey;
+    color: white;
     text-transform: uppercase;
-    font-weight: 700;
     font-size: 2rem;
-    padding: 15px; }
+    padding: 15px;
+    background-color: grey; }
   table tr td {
     padding: 15px;
     text-transform: capitalize;
     font-size: 1.5rem;
-    border-bottom: 1px solid #f2f2f2; }
+    border-bottom: 1px solid grey; }
     table tr td img {
       height: 73%; }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }

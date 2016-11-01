@@ -22,6 +22,12 @@
       ];
 
       vm.tax = 1.0575;
+
+      vm.update = function (item){
+        console.log(item);
+        vm.item.push(item);
+      }
+
     });
 
 })();
