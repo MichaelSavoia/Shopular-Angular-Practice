@@ -4,7 +4,9 @@
   angular
     .module('stock', [])
     .controller('inventoryController', function inventoryController(){
-      this.item = [
+
+      let vm = this;
+      vm.item = [
         { "id": 2957, "name": "widget", "price": 32, "quantity": 203, "color": "red", "discount": 31 },
         { "id": 89274, "name": "golf club", "price": 98, "quantity": 10, "color": "black", "discount": 0 },
         { "id": 64, "name": "iPhone", "price": 499, "quantity": 2, "color": "white", "discount": 0 },
@@ -19,7 +21,7 @@
         { "id": 683, "name": "pillow", "price": 27, "quantity": 10, "color": "black", "discount": 12 }
       ];
 
-      this.tax = 1.0575;
+      vm.tax = 1.0575;
     });
 
 })();
