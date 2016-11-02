@@ -28,7 +28,7 @@
 	<tr ng-cloak ng-repeat="item in controller.item | orderBy:'quantity' ">
 		<td>{{item.name}}</td>
 		<td>{{(item.price - item.discount) * controller.tax | currency}} <img ng-show="item.discount > 0" src="https://tiy-learn-content.s3.amazonaws.com/98350f05-sale_2.png"></td>
-		<td>{{item.quantity}}</td>
+		<td id="quantity"><input type="number" ng-model="item.quantity" value="{{item.quantity}}"></td>
 		<td>{{item.color}}</td>
 	</tr>
 </table>
@@ -36,7 +36,6 @@
 <form name="newProduct" ng-submit="controller.update(controller.form)">
 	<h2>Make a New Item</h2>
 	<p>Item Name: </p><input type="text" ng-model='controller.form.name' required placeholder="Item Name">
-	<p>Item Id: </p><input type="number" ng-model='controller.form.id' required required min='0' placeholder="Item ID">
 	<p>Item Original Price: </p><input type="number" ng-model='controller.form.price' required required min='0' placeholder="Price">
 	<p>Item Discount: </p><input type="number" ng-model='controller.form.discount' required min='0' placeholder="Discount">
 	<p>Item Quantity: </p><input type="number" ng-model='controller.form.quantity' required required min='0' placeholder="Quantity">

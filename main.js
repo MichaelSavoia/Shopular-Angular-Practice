@@ -24,8 +24,16 @@
       vm.tax = 1.0575;
 
       vm.update = function (item){
-        console.log(item);
+        let id = Date.now();
+        item.id = id;
+
         vm.item.push(item);
+
+        vm.form = {};
+      }
+
+      vm.change = function(quantity){
+        
       }
 
     });

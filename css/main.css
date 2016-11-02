@@ -6,11 +6,15 @@ body {
 
 header h1 {
   font-family: 'Gloria Hallelujah', cursive;
-  text-align: center;
-  font-size: 8rem;
+  text-align: left;
+  margin: 0 auto;
+  font-size: 5rem;
   text-transform: uppercase;
   letter-spacing: 0.8rem;
-  padding: 20px;
+  width: 60%;
+  padding: 30px;
+  padding-bottom: 0;
+  padding-left: 0;
   color: #ac2330; }
 
 header h2 {
@@ -23,24 +27,29 @@ header h2 {
   color: #f4f4f4; }
 
 table {
-  width: 80%;
-  margin: 30px auto; }
+  width: 60%;
+  margin: 30px auto;
+  margin-top: 20px; }
   table tr th {
     color: white;
     text-transform: uppercase;
     font-size: 2rem;
-    padding: 15px;
+    padding: 10px;
     background-color: grey; }
   table tr td {
-    padding: 15px;
+    padding: 10px;
     text-transform: capitalize;
     font-size: 1.5rem;
-    border-bottom: 1px solid grey; }
+    border-bottom: 1px solid lightgrey; }
+    table tr td input {
+      width: 50%; }
     table tr td img {
       height: 73%; }
+    table tr td #quantity {
+      text-align: center; }
 
 form {
-  width: 80%;
+  width: 60%;
   margin: 30px auto;
   margin-top: 100px; }
   form h2 {
@@ -61,7 +70,7 @@ form {
     border: none;
     font-size: 1.5rem;
     outline: none;
-    border-bottom: 1px solid grey; }
+    border-bottom: 1px solid lightgrey; }
   form input.ng-pristine {
     color: lightgrey; }
   form input.ng-invalid {
@@ -69,8 +78,9 @@ form {
   form #submit {
     margin-right: 2%;
     font-size: 2rem;
-    color: #f4f4f4;
-    background-color: grey;
+    color: #ac2330;
+    background-color: #f4f4f4;
+    border: 2px solid #ac2330;
     padding: 8px;
     width: auto; }
 
