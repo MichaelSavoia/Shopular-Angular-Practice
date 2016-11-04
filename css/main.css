@@ -4,32 +4,49 @@
 body {
   background-color: #f4f4f4; }
 
-header h1 {
-  font-family: 'Gloria Hallelujah', cursive;
-  text-align: left;
-  margin: 0 auto;
-  font-size: 5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.8rem;
+header {
   width: 60%;
+  margin: 0 auto;
   padding: 30px;
   padding-bottom: 0;
-  padding-left: 0;
-  color: #ac2330; }
-
-header h2 {
-  font-size: 3rem;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 60px;
-  margin-bottom: 0;
-  color: #f4f4f4; }
+  padding-left: 0; }
+  header h1 {
+    display: block;
+    width: 49%;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: left;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    color: #ac2330;
+    margin-bottom: 20px; }
+  header form {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 0;
+    margin-top: 0; }
+    header form input {
+      width: 40%;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 0;
+      vertical-align: baseline;
+      display: inline-block; }
+    header form button {
+      margin-left: 10px;
+      display: inline-block;
+      background-color: #f4f4f4;
+      outline: none;
+      border: 2px solid #ac2330;
+      padding: 5px 10px;
+      color: #ac2330; }
+  header p {
+    text-align: right; }
 
 table {
   width: 60%;
   margin: 30px auto;
-  margin-top: 20px; }
+  margin-top: 5px; }
   table tr th {
     color: white;
     text-transform: uppercase;
